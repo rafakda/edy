@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    html{
+    scroll-behavior: smooth;
+}
+    section {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    section .conteudo{
+        background-color: var(--cor2);
+        padding: 30px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.283);
+    }
+    section .topicos{
+        background-color: var(--cor2);
+        padding: 10px;
+        padding-bottom: 30px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.283);
+    }
+    section .topicos li:hover{
+        background-color: rgba(245, 222, 179, 0.36);
+    }
+    section h2{
+    background-color: rgba(165, 42, 42, 0.139);
+    border-left: solid 5px var(--cor3);
+    padding-left: 5px;
+    }
+    section h3{
+        margin-top: 20px ;
+    }
+    section p{
+        background-color: rgba(245, 222, 179, 0.36);
+        padding: 10px;
+        text-align: justify;
+    }
+    section ul{
+        background-color: rgb(249, 248, 248);
+    }
+    section li a{
+        list-style: none;
+        text-decoration: none;
+        color: var(--cor1);
+        font-weight: bold;
+        margin: 40px ;
+        
+    }
+    section li{
+        padding: 15px 0px;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.13);
+    }
+    @media (max-width:900px) {
+        section{
+            display: block;
+
+        }
+        section h2{
+            font-size: 20px;
+        }
+        section .topicos{
+            display: none;
+        }
+        #itemSubir{
+            display: none;
+
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div id="loggo" class="loggo"  onclick="abrirMenu()">
+           <div class="spanParaMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+           </div>
+        <h2>Abrir</h2> 
+        </div>
+        <div class="logoDireito">
+            <div id="spanParaMenuLogo" onclick="abrirMenuDireito()"   >
+                <div class="nome">
+                 Edi Cursos   
+                </div>
+                <div class="img">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+               </div>
+        </div>
+        <h1 >Edi Cursos</h1>
+    </header>
+    
+    <aside>
+        <div class="loggo">
+            <span class="fechar" ></span>
+            <h2>Fechar</h2> 
+        </div>
+            <a onclick="feecharMenuDireito()" class="fechar" href="#">Fechar X</a>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="#">Navegação</a>
+            <a href="#">You Tube</a>
+            <a href="contato.html">Contato</a>
+
+    </aside>
+    
+    <nav>
+        <div class="loggo" onclick="fecharMenu()">
+            <span class="fechar" style="color: rgb(133, 35, 35);" >X</span>
+            <h2>Fechar</h2> 
+        </div>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="#">Navegação</a>
+            <a href="#">You Tube</a>
+            <a href="contato.html">Contato</a>
+    </nav>
+   <main>
+    <section>
+        <div class="conteudo">
+            <h2>Estrutura básica de uma págia em HTML</h2>
+            <h3 id="introducao">Introdução</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat fugit atque dolores veritatis quidem, asperiores, error aut, neque sunt nemo quas delectus numquam voluptate cumque dolorem consequatur nesciunt sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsam quam tempora minus! Animi doloribus saepe in aperiam porro, vel molestiae, earum sapiente omnis molestias veniam quidem? Eligendi, soluta ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti corporis voluptate necessitatibus consequuntur doloremque eum veniam fuga explicabo sed, quidem voluptatibus labore soluta aliquid quasi quo quisquam molestiae velit consectetur?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ea laudantium incidunt facilis necessitatibus omnis consequatur. Et illo repellat optio? Beatae nemo rem esse qui nisi. At facere ea magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque vitae amet accusantium voluptates animi, eius mollitia dolores asperiores commodi ducimus consequatur numquam quam odio est in expedita libero dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam architecto esse itaque maxime in pariatur minus id totam voluptatum ut ad reiciendis ex qui hic quam perspiciatis quaerat, quisquam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quod quos, sit voluptas impedit quasi itaque vitae praesentium hic, eveniet vel qui soluta fugit odit aliquam quaerat nemo pariatur eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, at accusamus? Itaque dolorem doloribus nobis fuga molestiae eius sequi aliquid magni sapiente placeat. Reiciendis dignissimos ea, excepturi repellat id quaerat.
+            </p>
+            <h3 id="comoSurgiu">Como a interne surgiu?</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat fugit atque dolores veritatis quidem, asperiores, error aut, neque sunt nemo quas delectus numquam voluptate cumque dolorem consequatur nesciunt sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsam quam tempora minus! Animi doloribus saepe in aperiam porro, vel molestiae, earum sapiente omnis molestias veniam quidem? Eligendi, soluta ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti corporis voluptate necessitatibus consequuntur doloremque eum veniam fuga explicabo sed, quidem voluptatibus labore soluta aliquid quasi quo quisquam molestiae velit consectetur?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ea laudantium incidunt facilis necessitatibus omnis consequatur. Et illo repellat optio? Beatae nemo rem esse qui nisi. At facere ea magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque vitae amet accusantium voluptates animi, eius mollitia dolores asperiores commodi ducimus consequatur numquam quam odio est in expedita libero dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam architecto esse itaque maxime in pariatur minus id totam voluptatum ut ad reiciendis ex qui hic quam perspiciatis quaerat, quisquam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quod quos, sit voluptas impedit quasi itaque vitae praesentium hic, eveniet vel qui soluta fugit odit aliquam quaerat nemo pariatur eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, at accusamus? Itaque dolorem doloribus nobis fuga molestiae eius sequi aliquid magni sapiente placeat. Reiciendis dignissimos ea, excepturi repellat id quaerat.
+            </p>
+            <h3 id="html">Criação do HTML</h3>
+            <p>
+                asperiores commodi ducimus consequatur numquam quam odio est in expedita libero dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam architecto esse itaque maxime in pariatur minus id totam voluptatum ut ad reiciendis ex qui hic quam perspiciatis quaerat, quisquam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quod quos, sit voluptas impedit quasi itaque vitae praesentium hic, eveniet vel qui soluta fugit odit aliquam quaerat nemo pariatur eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, at accusamus? Itaque dolorem doloribus nobis fuga molestiae eius sequi aliquid magni sapiente placeat. Reiciendis dignissimos ea, excepturi repellat id quaerat.
+            </p>
+            <h3 id="www">Criação do WWW</h3>
+            <p>
+                asperiores commodi ducimus consequatur numquam quam odio est in expedita libero dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam architecto esse itaque maxime in pariatur minus id totam voluptatum ut ad reiciendis ex qui hic quam perspiciatis quaerat, quisquam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quod quos, sit voluptas impedit quasi itaque vitae praesentium hic, eveniet vel qui soluta fugit odit aliquam quaerat nemo pariatur eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, at accusamus? Itaque dolorem doloribus nobis fuga molestiae eius sequi aliquid magni sapiente placeat. Reiciendis dignissimos ea, excepturi repellat id quaerat.
+            </p>
+            <h3 id="siglas">Definindo o que é cada sigla</h3>
+            <p>
+                asperiores commodi ducimus consequatur numquam quam odio est in expedita libero dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam architecto esse itaque maxime in pariatur minus id totam voluptatum ut ad reiciendis ex qui hic quam perspiciatis quaerat, quisquam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quod quos, sit voluptas impedit quasi itaque vitae praesentium hic, eveniet vel qui soluta fugit odit aliquam quaerat nemo pariatur eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, at accusamus? Itaque dolorem doloribus nobis fuga molestiae eius sequi aliquid magni sapiente placeat. Reiciendis dignissimos ea, excepturi repellat id quaerat.
+            </p>
+            <h3 id="conclusao">Conclusão</h3>
+            <p>
+                asperiores commodi ducimus consequatur numquam quam odio est in expedita libero dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam architecto esse itaque maxime in pariatur minus id totam voluptatum ut ad reiciendis ex qui hic quam perspiciatis quaerat, quisquam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quod quos, sit voluptas impedit quasi itaque vitae praesentium hic, eveniet vel qui soluta fugit odit aliquam quaerat nemo pariatur eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, at accusamus? Itaque dolorem doloribus nobis fuga molestiae eius sequi aliquid magni sapiente placeat. Reiciendis dignissimos ea, excepturi repellat id quaerat.
+            </p>
+           
+
+        </div>
+        <div class="conteinerPaiTopicos">
+            <div class="topicos">
+                <h3>Tópicos</h3>
+                   <ul>
+                    <li><a href="#introducao"> ⇒ Introdução</a></li>
+                    <li><a href="#comoSurgiu">⇒ Como a interne surgiu?</a></li>
+                    <li><a href="#html">⇒ Criação do HTML</a></li>
+                    <li><a href="#www">⇒ Criação do WWW</a></li>
+                    <li><a href="#siglas">⇒ Definindo cada sigla</a></li>
+                    <li><a href="#conclusao">⇒ Conclusão</a></li>
+                   </ul>
+            </div>
+        </div>
+    </section>   
+</main>
+
+    <a id="itemSubir" href="#">&#128770;</a>
+    <footer>
+
+        <div class="contEsquFoot">
+            <div class="telefone">
+            <p class="fone">Telefone:</p>
+            <p>3584-4062</p>
+        </div>
+        <div class="email">
+            <p class="fone">E-mail::</p>
+            <p class="mail">edicursos@gmail.com</p>
+        </div>
+        </div>
+        <div class="contDirFoot">
+            <div class="logoDireito">
+                Edi Cursos
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

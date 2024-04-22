@@ -1,0 +1,325 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width:900px) {
+    h4{
+        font-size: 4px;
+      
+    }
+    p{
+        font-size: 12px;
+    }
+
+    
+}
+:root{
+    --cor1:black;
+    --cor2:rgb(231, 232, 215);
+    --cor3:rgb(133, 35, 35);
+    --cor4: rgba(0, 0, 0, 0.068);
+    --cor5:rgb(119, 118, 118);
+    --cor6:rgb(248, 245, 245);
+    --cor7:white;
+}
+html{
+    scroll-behavior: smooth;/*DAR SUAVIDADE AOS MOVIMENTOS*/
+}
+header{
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    position: fixed;
+    width: 100%;
+}
+header .loggo{
+    display: flex;
+    align-items: center;
+}
+header  span{
+    width: 40px;
+    border-bottom: solid 3px var(--cor7);
+    display: block;
+    cursor: pointer;
+    margin: 10px;
+}
+header h1{
+    display: none;
+    color: var(--cor7);
+    font-size: 25px;
+    padding-top: 5px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+header h2{
+    color: var(--cor7);
+    display: inline;
+    font-size: 30px;
+    cursor: pointer;
+}
+header img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+header .logoDireito{
+    color: var(--cor7);
+    font-size: 30px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+header .logoDireito span{
+    display: none;
+    
+}
+header .spanParaMenu{
+    background-color: var(--cor1);
+    cursor: pointer;
+}
+@media (max-width: 900px){
+    header .loggo{
+        display: none;
+    }
+    header{
+        right: 5px;
+        top: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+    }
+    header .logoDireito{
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    header .logoDireito span{
+        display: block;
+        margin: 10px;
+    }
+    header .nome{
+        display: none;
+    }
+    header h1{
+        display: block;
+        padding-left: 10px;
+    }
+}
+aside{
+    width: 0px;
+    background-color: var(--cor1);
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    margin-top: 5px;
+    display: none;
+    margin-top: -20px;
+}
+aside .fechar{
+    background-color: rgb(255, 98, 0);
+}
+aside a {
+    display: block;
+    color: var(--cor7);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 15px;
+    border-bottom:  solid 1px rgb(34, 34, 34);
+    text-align: center;
+}
+aside a:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
+    transition: all 0.5;
+}
+aside .Contato{
+    padding: 20px;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border: solid 2px var(--cor7);
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    transition: all .7s;
+}
+aside a:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
+    font-size: 20px;
+    transition: all 0.5;
+}
+@media (max-width: 900px){
+    aside{
+        display: block;
+    }
+}
+nav{
+    width: 0px;
+    background-color: var(--cor1);
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    transition: all .3s;
+    margin-top: 5px;
+}
+nav span{
+    background-color: var(--cor1);
+    color: var(--cor7);
+    padding: 0px;
+    font-weight: bold;
+    font-size: 40px;
+    width: 60px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+ nav .fechar:hover{
+    color: var(--cor3);
+    transition: all 0.5s;
+}
+nav .loggo{
+    display: flex;
+    align-items: center;
+}
+nav h2{
+    color: var(--cor3);
+    display: inline;
+    font-size: 30px;
+    cursor: pointer;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+nav a {
+    display: block;
+    color: var(--cor7);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 20px;
+    border-bottom:  solid 1px rgb(34, 34, 34);
+}
+
+nav a:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
+    transition: all 0.5;
+}
+
+/*SEPARADOR DE CONTEUDO - CONTEÚDO DA PÁGINA*/
+main{
+    transition: all .3s;
+    background-color: var(--cor6);
+}
+section article img{
+    width: 100%;
+    height: 100%;
+}
+h4{
+    background-color: rgba(165, 42, 42, 0.139);
+    border-left: solid 5px var(--cor3);
+    padding-left: 5px;
+}
+section{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1/3;
+    gap: 15px;
+    padding: 70px 15px 15px 15px;
+    transition: all .5s;
+    background-color: var(--cor6);
+}
+section .conteinerDireito{ /*Colocando a legenda por cima da foto pelo grid sem position*/
+    display: grid;
+    gap: 15px;
+}
+section .bloco{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.283);
+}
+section article{
+    display: grid;
+}
+section article img{
+    grid-column: 1;
+    grid-row: 1/3;
+}
+section article p{
+    background-color: rgba(4, 4, 4, 0.552);
+    padding: 20px;
+    color: var(--cor7);
+    grid-column: 1;
+    grid-row: 2;   
+}
+@media (max-width: 900px){
+    section{
+        padding-top: 105px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    section .conteinerDireito{
+        display: grid;
+        
+    }
+}
+/*SEPARADOR DE CONTEUDO - CONTEÚDO DA PÁGINA*/
+#itemSubir{
+    background-color: var(--cor6);
+   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.498);
+    font-size: 30px;
+    padding: 0px 5px;
+    color: var(--cor1);
+    position: fixed;
+    right: 4px;
+    bottom: 2px;
+    transition: all .5s;
+}
+footer{
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    color: var(--cor7);
+    padding: 10px;
+    transition: all .3s;
+    bottom: 0px;
+}
+footer .contEsquFoot{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+footer .contEsquFoot .fone{
+    color: var(--cor7);
+    font-weight: bold;
+
+}
+footer .logoDireito{
+    color: var(--cor7);
+    font-size: 30px;
+    padding-top: 25px;
+    padding-right: 10px;
+}
+@media (max-width: 900px){
+    footer{
+        padding: 30px;
+    }
+    footer .logoDireito{
+        font-size: 25px;
+    }
+    .itemSubir{
+        display: none;
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root{
+        --cor1:black;
+        --cor2:white;
+        --cor3:rgb(133, 35, 35);
+        --cor4: rgba(0, 0, 0, 0.068);
+        --cor5:rgb(119, 118, 118);
+    }
+    section{
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+    .formulario{
+        
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.394);
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background-color: var(--cor2);
+        padding: 25px 10px;
+    }
+    form input{
+        padding: 10px;
+    }
+    form label{
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    form textarea{
+        margin: 15px 0px;
+        padding-left: 10px;
+    }
+    form #btn{
+        background-color: var(--cor2);
+        border: solid 2px var(--cor3);
+        width: 40%;
+        padding: 20px;
+        border-radius: 5px;
+        color: var(--cor3);
+    }
+    form #btn:hover{
+        background-color: rgba(165, 42, 42, 0.085);
+        cursor: pointer;
+        transition: all .5s;
+    }
+    @media (max-width:900px) {
+        .formulario{
+            width: 90%;
+        }
+        form #btn{
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+    }
+    
+  
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div id="loggo" class="loggo"  onclick="abrirMenu()">
+           <div class="spanParaMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+           </div>
+        <h2>Abrir</h2> 
+        </div>
+        <div class="logoDireito">
+            <div id="spanParaMenuLogo" onclick="abrirMenuDireito()"   >
+                <div class="nome">
+                 Edi Cursos   
+                </div>
+                <div class="img">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+               </div>
+        </div>
+        <h1 >Edi Cursos</h1>
+    </header>
+    
+    <aside>
+        <div class="loggo">
+            <span class="fechar" ></span>
+            <h2>Fechar</h2> 
+        </div>
+            <a onclick="feecharMenuDireito()" class="fechar" href="#">Fechar X</a>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="navegação.html">Navegação</a>
+            <a href="#">You Tube</a>
+            <a href="#">Contato</a>
+
+    </aside>
+    
+    <nav>
+        <div class="loggo" onclick="fecharMenu()">
+            <span class="fechar" style="color: rgb(133, 35, 35);" >X</span>
+            <h2>Fechar</h2> 
+        </div>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="navegação.html">Navegação</a>
+            <a href="#">You Tube</a>
+            <a href="#">Contato</a>
+    </nav>
+
+   <main>
+    <section>
+        <form action="https://api.staticforms.xyz/submit" method="post" class="formulario">
+            <h4 style="color: var(--cor3);font-size: 20px;">Preencha o formulário</h4>
+            <label for="nome">Nome:</label>
+            <input type="text" name="name" id="nome" placeholder="Digite seu nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+            <textarea name="message" id="msg" cols="30" rows="10" placeholder="Digite uma mensagem"></textarea>
+            <input type="hidden" name="accessKey" value="a3cb13f2-470b-4519-9540-bbc284360bef">
+            <input type="hidden" name="redirectTo" value="https://ediy.000webhostapp.com/conato.html">
+
+
+            <input id="btn" type="submit" value="Enviar mensagem">
+        </form>
+    </section>   
+</main>
+
+    <footer>
+
+        <div class="contEsquFoot">
+            <div class="telefone">
+            <p class="fone">Telefone:</p>
+            <p>3584-4062</p>
+        </div>
+        <div class="email">
+            <p class="fone">E-mail::</p>
+            <p class="mail">edicursos@gmail.com</p>
+        </div>
+        </div>
+        <div class="contDirFoot">
+            <div class="logoDireito">
+                Edi Cursos
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

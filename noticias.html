@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    :root{
+    --cor1:black;
+    --cor2:white;
+    --cor3:rgb(133, 35, 35);
+    --cor4: rgba(0, 0, 0, 0.068);
+    --cor5:rgb(119, 118, 118);
+    --cor6:rgb(248, 245, 245);
+}
+section{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor6);
+}
+section .bloco{
+    padding: 15px;
+    width: 80%;
+    background-color: var(--cor2);
+}
+section h4{
+    font-size: 25px;
+}
+section h5{
+    font-size: 20px;
+}
+section img{
+    width: 80%;
+margin-top: 10px;
+border: solid .3px black;
+display: flex;
+margin: auto;
+margin-top: 5px;
+}
+section p{
+    margin: 20px 0px;
+    text-align: justify;
+}
+@media (max-width:900px) {
+    section .bloco{
+        width: 100%;
+    }
+    
+}
+   
+</style>
+<body>
+    <header id="header">
+        <div class="loggo"  onclick="abrirMenu()">
+           <div class="spanParaMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+           </div>
+        <h2>Abrir</h2> 
+        </div>
+        <div class="logoDireito">
+            <div id="spanParaMenuLogo" onclick="abrirMenuDireito()"   >
+                <div class="nome">
+                 Edi Cursos   
+                </div>
+                <div class="img">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+               </div>
+        </div>
+        <h1 >Edi Cursos</h1>
+    </header>
+    
+    <aside>
+        <div class="loggo">
+            <span class="fechar" ></span>
+            <h2>Fechar</h2> 
+        </div>
+            <a onclick="feecharMenuDireito()" class="fechar" href="#">Fechar X</a>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="navegação.html">Navegação</a>
+            <a href="#">You Tube</a>
+            <a href="contato.html">Contato</a>
+
+    </aside>
+    
+    <nav>
+        <div class="loggo" onclick="fecharMenu()">
+            <span class="fechar" style="color: rgb(133, 35, 35);" >X</span>
+            <h2>Fechar</h2> 
+        </div>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="navegação.html">Navegação</a>
+            <a href="#">You Tube</a>
+            <a href="contato.html">Contato</a>
+    </nav>
+
+    <main>
+    <section class="conteudo-geral">
+        <div class="bloco">
+            <h4 class="titulo" style="margin-bottom: 7px;">NOTÍCIAS DO DIA:</h4>
+            <h5>Alunos da Escola Municipal do Bairro Alvorada fazem Trabalhos sobre proeção ao meio ambiente.</h5>
+           <img src="notticias.jpg" alt="">
+            <h4 class="titulo" style="margin-top: 7px;">Notícias</h4>
+            <p>
+                Direcionar conhecimeno de qualidade atravez de cursos online E-books, cursos presenciais, palestras com o objetivo de qualificar os nossos alunos para que eles possam alcançar os seus <span>objetivos e transformar seus sonhos em realidade!</span> 
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident numquam consectetur consequuntur perferendis in architecto possimus cupiditate, fuga, nemo et optio, quasi veritatis eligendi aut! At officia cumque ab quaerat!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, tempora deleniti. Ab cum, porro numquam perspiciatis non laborum fuga. Excepturi similique molestiae commodi consequatur repellendus. Sed optio expedita nulla nobis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eaque libero molestiae cumque mollitia alias vel voluptate facere obcaecati? Mollitia minus iure deserunt atque suscipit asperiores, sed et doloremque eveniet!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quam repellat delectus culpa ratione nisi incidunt deserunt soluta maxime doloremque ducimus nemo reprehenderit temporibus quasi, magni quidem iusto, eveniet amet.
+            </p>
+            <h4 class="titulo" style="margin-top: 7px;">
+                Nossa Vissão
+            </h4>
+            <p>
+                Ser um centro de pesquisa que gera e disemina <span class="span">conhecimeno</span> e que investe no desesnvolvimento de novas <span class="span">tecnologias</span>  .
+            </p>
+
+        </div>
+       
+        </div>
+    </section>
+</main>
+
+    <footer>
+
+        <div class="contEsquFoot">
+            <div class="telefone">
+            <p class="fone">Telefone:</p>
+            <p>3584-4062</p>
+        </div>
+        <div class="email">
+            <p class="fone">E-mail::</p>
+            <p class="mail">edicursos@gmail.com</p>
+        </div>
+        </div>
+        <div class="contDirFoot">
+            <div class="logoDireito">
+                Edi Cursos
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
